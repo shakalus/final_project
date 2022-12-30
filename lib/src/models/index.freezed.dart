@@ -32,14 +32,12 @@ mixin _$Character {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CharacterCopyWith<Character> get copyWith =>
-      throw _privateConstructorUsedError;
+  $CharacterCopyWith<Character> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CharacterCopyWith<$Res> {
-  factory $CharacterCopyWith(Character value, $Res Function(Character) then) =
-      _$CharacterCopyWithImpl<$Res, Character>;
+  factory $CharacterCopyWith(Character value, $Res Function(Character) then) = _$CharacterCopyWithImpl<$Res, Character>;
   @useResult
   $Res call(
       {int id,
@@ -53,8 +51,7 @@ abstract class $CharacterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CharacterCopyWithImpl<$Res, $Val extends Character>
-    implements $CharacterCopyWith<$Res> {
+class _$CharacterCopyWithImpl<$Res, $Val extends Character> implements $CharacterCopyWith<$Res> {
   _$CharacterCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -113,8 +110,7 @@ class _$CharacterCopyWithImpl<$Res, $Val extends Character>
 
 /// @nodoc
 abstract class _$$Character$CopyWith<$Res> implements $CharacterCopyWith<$Res> {
-  factory _$$Character$CopyWith(
-          _$Character$ value, $Res Function(_$Character$) then) =
+  factory _$$Character$CopyWith(_$Character$ value, $Res Function(_$Character$) then) =
       __$$Character$CopyWithImpl<$Res>;
   @override
   @useResult
@@ -130,12 +126,9 @@ abstract class _$$Character$CopyWith<$Res> implements $CharacterCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$Character$CopyWithImpl<$Res>
-    extends _$CharacterCopyWithImpl<$Res, _$Character$>
+class __$$Character$CopyWithImpl<$Res> extends _$CharacterCopyWithImpl<$Res, _$Character$>
     implements _$$Character$CopyWith<$Res> {
-  __$$Character$CopyWithImpl(
-      _$Character$ _value, $Res Function(_$Character$) _then)
-      : super(_value, _then);
+  __$$Character$CopyWithImpl(_$Character$ _value, $Res Function(_$Character$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -199,8 +192,7 @@ class _$Character$ implements Character$ {
       required this.created,
       @JsonKey(name: 'image') required this.mediumImage});
 
-  factory _$Character$.fromJson(Map<String, dynamic> json) =>
-      _$$Character$FromJson(json);
+  factory _$Character$.fromJson(Map<String, dynamic> json) => _$$Character$FromJson(json);
 
   @override
   final int id;
@@ -237,20 +229,17 @@ class _$Character$ implements Character$ {
             (identical(other.type, type) || other.type == type) &&
             (identical(other.gender, gender) || other.gender == gender) &&
             (identical(other.created, created) || other.created == created) &&
-            (identical(other.mediumImage, mediumImage) ||
-                other.mediumImage == mediumImage));
+            (identical(other.mediumImage, mediumImage) || other.mediumImage == mediumImage));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, status, species, type,
-      gender, created, mediumImage);
+  int get hashCode => Object.hash(runtimeType, id, name, status, species, type, gender, created, mediumImage);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Character$CopyWith<_$Character$> get copyWith =>
-      __$$Character$CopyWithImpl<_$Character$>(this, _$identity);
+  _$$Character$CopyWith<_$Character$> get copyWith => __$$Character$CopyWithImpl<_$Character$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -262,18 +251,16 @@ class _$Character$ implements Character$ {
 
 abstract class Character$ implements Character {
   const factory Character$(
-          {required final int id,
-          required final String name,
-          required final String status,
-          required final String species,
-          required final String type,
-          required final String gender,
-          required final String created,
-          @JsonKey(name: 'image') required final String mediumImage}) =
-      _$Character$;
+      {required final int id,
+      required final String name,
+      required final String status,
+      required final String species,
+      required final String type,
+      required final String gender,
+      required final String created,
+      @JsonKey(name: 'image') required final String mediumImage}) = _$Character$;
 
-  factory Character$.fromJson(Map<String, dynamic> json) =
-      _$Character$.fromJson;
+  factory Character$.fromJson(Map<String, dynamic> json) = _$Character$.fromJson;
 
   @override
   int get id;
@@ -294,8 +281,7 @@ abstract class Character$ implements Character {
   String get mediumImage;
   @override
   @JsonKey(ignore: true)
-  _$$Character$CopyWith<_$Character$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$Character$CopyWith<_$Character$> get copyWith => throw _privateConstructorUsedError;
 }
 
 AppState _$AppStateFromJson(Map<String, dynamic> json) {
@@ -312,28 +298,20 @@ mixin _$AppState {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $AppStateCopyWith<AppState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppStateCopyWith<AppState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
-  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
-      _$AppStateCopyWithImpl<$Res, AppState>;
+  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) = _$AppStateCopyWithImpl<$Res, AppState>;
   @useResult
-  $Res call(
-      {List<Character> character,
-      List<int> liked,
-      bool isLoading,
-      Character? selectedCharacter,
-      int page});
+  $Res call({List<Character> character, List<int> liked, bool isLoading, Character? selectedCharacter, int page});
 
   $CharacterCopyWith<$Res>? get selectedCharacter;
 }
 
 /// @nodoc
-class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
-    implements $AppStateCopyWith<$Res> {
+class _$AppStateCopyWithImpl<$Res, $Val extends AppState> implements $AppStateCopyWith<$Res> {
   _$AppStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -389,29 +367,19 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
 
 /// @nodoc
 abstract class _$$AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory _$$AppState$CopyWith(
-          _$AppState$ value, $Res Function(_$AppState$) then) =
-      __$$AppState$CopyWithImpl<$Res>;
+  factory _$$AppState$CopyWith(_$AppState$ value, $Res Function(_$AppState$) then) = __$$AppState$CopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {List<Character> character,
-      List<int> liked,
-      bool isLoading,
-      Character? selectedCharacter,
-      int page});
+  $Res call({List<Character> character, List<int> liked, bool isLoading, Character? selectedCharacter, int page});
 
   @override
   $CharacterCopyWith<$Res>? get selectedCharacter;
 }
 
 /// @nodoc
-class __$$AppState$CopyWithImpl<$Res>
-    extends _$AppStateCopyWithImpl<$Res, _$AppState$>
+class __$$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res, _$AppState$>
     implements _$$AppState$CopyWith<$Res> {
-  __$$AppState$CopyWithImpl(
-      _$AppState$ _value, $Res Function(_$AppState$) _then)
-      : super(_value, _then);
+  __$$AppState$CopyWithImpl(_$AppState$ _value, $Res Function(_$AppState$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -459,8 +427,7 @@ class _$AppState$ implements AppState$ {
       : _character = character,
         _liked = liked;
 
-  factory _$AppState$.fromJson(Map<String, dynamic> json) =>
-      _$$AppState$FromJson(json);
+  factory _$AppState$.fromJson(Map<String, dynamic> json) => _$$AppState$FromJson(json);
 
   final List<Character> _character;
   @override
@@ -499,31 +466,22 @@ class _$AppState$ implements AppState$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AppState$ &&
-            const DeepCollectionEquality()
-                .equals(other._character, _character) &&
+            const DeepCollectionEquality().equals(other._character, _character) &&
             const DeepCollectionEquality().equals(other._liked, _liked) &&
-            (identical(other.isLoading, isLoading) ||
-                other.isLoading == isLoading) &&
-            (identical(other.selectedCharacter, selectedCharacter) ||
-                other.selectedCharacter == selectedCharacter) &&
+            (identical(other.isLoading, isLoading) || other.isLoading == isLoading) &&
+            (identical(other.selectedCharacter, selectedCharacter) || other.selectedCharacter == selectedCharacter) &&
             (identical(other.page, page) || other.page == page));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(_character),
-      const DeepCollectionEquality().hash(_liked),
-      isLoading,
-      selectedCharacter,
-      page);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_character),
+      const DeepCollectionEquality().hash(_liked), isLoading, selectedCharacter, page);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
+  _$$AppState$CopyWith<_$AppState$> get copyWith => __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -555,6 +513,5 @@ abstract class AppState$ implements AppState {
   int get page;
   @override
   @JsonKey(ignore: true)
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AppState$CopyWith<_$AppState$> get copyWith => throw _privateConstructorUsedError;
 }

@@ -19,8 +19,7 @@ _$Character$ _$$Character$FromJson(Map<String, dynamic> json) => _$Character$(
       mediumImage: json['image'] as String,
     );
 
-Map<String, dynamic> _$$Character$ToJson(_$Character$ instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$Character$ToJson(_$Character$ instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'status': instance.status,
@@ -32,22 +31,20 @@ Map<String, dynamic> _$$Character$ToJson(_$Character$ instance) =>
     };
 
 _$AppState$ _$$AppState$FromJson(Map<String, dynamic> json) => _$AppState$(
-      character: (json['character'] as List<dynamic>?)
-              ?.map((e) => Character.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const <Character>[],
-      liked: (json['liked'] as List<dynamic>?)?.map((e) => e as int).toList() ??
-          const <int>[],
+      character:
+          (json['character'] as List<dynamic>?)?.map((e) => Character.fromJson(e as Map<String, dynamic>)).toList() ??
+              const <Character>[],
+      liked: (json['liked'] as List<dynamic>?)?.map((e) => e as int).toList() ?? const <int>[],
       isLoading: json['isLoading'] as bool? ?? true,
       selectedCharacter: json['selectedCharacter'] == null
           ? null
           : Character.fromJson(
-              json['selectedCharacter'] as Map<String, dynamic>,),
+              json['selectedCharacter'] as Map<String, dynamic>,
+            ),
       page: json['page'] as int? ?? 1,
     );
 
-Map<String, dynamic> _$$AppState$ToJson(_$AppState$ instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$AppState$ToJson(_$AppState$ instance) => <String, dynamic>{
       'character': instance.character,
       'liked': instance.liked,
       'isLoading': instance.isLoading,

@@ -64,14 +64,12 @@ mixin _$GetCharacters {
 
 /// @nodoc
 abstract class $GetCharactersCopyWith<$Res> {
-  factory $GetCharactersCopyWith(
-          GetCharacters value, $Res Function(GetCharacters) then) =
+  factory $GetCharactersCopyWith(GetCharacters value, $Res Function(GetCharacters) then) =
       _$GetCharactersCopyWithImpl<$Res, GetCharacters>;
 }
 
 /// @nodoc
-class _$GetCharactersCopyWithImpl<$Res, $Val extends GetCharacters>
-    implements $GetCharactersCopyWith<$Res> {
+class _$GetCharactersCopyWithImpl<$Res, $Val extends GetCharacters> implements $GetCharactersCopyWith<$Res> {
   _$GetCharactersCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -82,17 +80,14 @@ class _$GetCharactersCopyWithImpl<$Res, $Val extends GetCharacters>
 
 /// @nodoc
 abstract class _$$GetCharacterStartCopyWith<$Res> {
-  factory _$$GetCharacterStartCopyWith(
-          _$GetCharacterStart value, $Res Function(_$GetCharacterStart) then) =
+  factory _$$GetCharacterStartCopyWith(_$GetCharacterStart value, $Res Function(_$GetCharacterStart) then) =
       __$$GetCharacterStartCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetCharacterStartCopyWithImpl<$Res>
-    extends _$GetCharactersCopyWithImpl<$Res, _$GetCharacterStart>
+class __$$GetCharacterStartCopyWithImpl<$Res> extends _$GetCharactersCopyWithImpl<$Res, _$GetCharacterStart>
     implements _$$GetCharacterStartCopyWith<$Res> {
-  __$$GetCharacterStartCopyWithImpl(
-      _$GetCharacterStart _value, $Res Function(_$GetCharacterStart) _then)
+  __$$GetCharacterStartCopyWithImpl(_$GetCharacterStart _value, $Res Function(_$GetCharacterStart) _then)
       : super(_value, _then);
 }
 
@@ -108,8 +103,7 @@ class _$GetCharacterStart implements GetCharacterStart {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetCharacterStart);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$GetCharacterStart);
   }
 
   @override
@@ -190,19 +184,18 @@ abstract class GetCharacterStart implements GetCharacters {
 
 /// @nodoc
 abstract class _$$GetCharactersSuccessfulCopyWith<$Res> {
-  factory _$$GetCharactersSuccessfulCopyWith(_$GetCharactersSuccessful value,
-          $Res Function(_$GetCharactersSuccessful) then) =
+  factory _$$GetCharactersSuccessfulCopyWith(
+          _$GetCharactersSuccessful value, $Res Function(_$GetCharactersSuccessful) then) =
       __$$GetCharactersSuccessfulCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Character> character});
 }
 
 /// @nodoc
-class __$$GetCharactersSuccessfulCopyWithImpl<$Res>
-    extends _$GetCharactersCopyWithImpl<$Res, _$GetCharactersSuccessful>
+class __$$GetCharactersSuccessfulCopyWithImpl<$Res> extends _$GetCharactersCopyWithImpl<$Res, _$GetCharactersSuccessful>
     implements _$$GetCharactersSuccessfulCopyWith<$Res> {
-  __$$GetCharactersSuccessfulCopyWithImpl(_$GetCharactersSuccessful _value,
-      $Res Function(_$GetCharactersSuccessful) _then)
+  __$$GetCharactersSuccessfulCopyWithImpl(
+      _$GetCharactersSuccessful _value, $Res Function(_$GetCharactersSuccessful) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -222,8 +215,7 @@ class __$$GetCharactersSuccessfulCopyWithImpl<$Res>
 /// @nodoc
 
 class _$GetCharactersSuccessful implements GetCharactersSuccessful {
-  const _$GetCharactersSuccessful(final List<Character> character)
-      : _character = character;
+  const _$GetCharactersSuccessful(final List<Character> character) : _character = character;
 
   final List<Character> _character;
   @override
@@ -243,20 +235,17 @@ class _$GetCharactersSuccessful implements GetCharactersSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetCharactersSuccessful &&
-            const DeepCollectionEquality()
-                .equals(other._character, _character));
+            const DeepCollectionEquality().equals(other._character, _character));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_character));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_character));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetCharactersSuccessfulCopyWith<_$GetCharactersSuccessful> get copyWith =>
-      __$$GetCharactersSuccessfulCopyWithImpl<_$GetCharactersSuccessful>(
-          this, _$identity);
+      __$$GetCharactersSuccessfulCopyWithImpl<_$GetCharactersSuccessful>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -328,30 +317,25 @@ class _$GetCharactersSuccessful implements GetCharactersSuccessful {
 }
 
 abstract class GetCharactersSuccessful implements GetCharacters {
-  const factory GetCharactersSuccessful(final List<Character> character) =
-      _$GetCharactersSuccessful;
+  const factory GetCharactersSuccessful(final List<Character> character) = _$GetCharactersSuccessful;
 
   List<Character> get character;
   @JsonKey(ignore: true)
-  _$$GetCharactersSuccessfulCopyWith<_$GetCharactersSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetCharactersSuccessfulCopyWith<_$GetCharactersSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetCharactersErrorCopyWith<$Res> {
-  factory _$$GetCharactersErrorCopyWith(_$GetCharactersError value,
-          $Res Function(_$GetCharactersError) then) =
+  factory _$$GetCharactersErrorCopyWith(_$GetCharactersError value, $Res Function(_$GetCharactersError) then) =
       __$$GetCharactersErrorCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$GetCharactersErrorCopyWithImpl<$Res>
-    extends _$GetCharactersCopyWithImpl<$Res, _$GetCharactersError>
+class __$$GetCharactersErrorCopyWithImpl<$Res> extends _$GetCharactersCopyWithImpl<$Res, _$GetCharactersError>
     implements _$$GetCharactersErrorCopyWith<$Res> {
-  __$$GetCharactersErrorCopyWithImpl(
-      _$GetCharactersError _value, $Res Function(_$GetCharactersError) _then)
+  __$$GetCharactersErrorCopyWithImpl(_$GetCharactersError _value, $Res Function(_$GetCharactersError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -391,20 +375,17 @@ class _$GetCharactersError implements GetCharactersError {
         (other.runtimeType == runtimeType &&
             other is _$GetCharactersError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetCharactersErrorCopyWith<_$GetCharactersError> get copyWith =>
-      __$$GetCharactersErrorCopyWithImpl<_$GetCharactersError>(
-          this, _$identity);
+      __$$GetCharactersErrorCopyWithImpl<_$GetCharactersError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -476,14 +457,12 @@ class _$GetCharactersError implements GetCharactersError {
 }
 
 abstract class GetCharactersError implements GetCharacters {
-  const factory GetCharactersError(
-      final Object error, final StackTrace stackTrace) = _$GetCharactersError;
+  const factory GetCharactersError(final Object error, final StackTrace stackTrace) = _$GetCharactersError;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$GetCharactersErrorCopyWith<_$GetCharactersError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetCharactersErrorCopyWith<_$GetCharactersError> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -491,14 +470,12 @@ mixin _$SetSelectedCharacter {
   Character get character => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SetSelectedCharacterCopyWith<SetSelectedCharacter> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetSelectedCharacterCopyWith<SetSelectedCharacter> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SetSelectedCharacterCopyWith<$Res> {
-  factory $SetSelectedCharacterCopyWith(SetSelectedCharacter value,
-          $Res Function(SetSelectedCharacter) then) =
+  factory $SetSelectedCharacterCopyWith(SetSelectedCharacter value, $Res Function(SetSelectedCharacter) then) =
       _$SetSelectedCharacterCopyWithImpl<$Res, SetSelectedCharacter>;
   @useResult
   $Res call({Character character});
@@ -507,8 +484,7 @@ abstract class $SetSelectedCharacterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SetSelectedCharacterCopyWithImpl<$Res,
-        $Val extends SetSelectedCharacter>
+class _$SetSelectedCharacterCopyWithImpl<$Res, $Val extends SetSelectedCharacter>
     implements $SetSelectedCharacterCopyWith<$Res> {
   _$SetSelectedCharacterCopyWithImpl(this._value, this._then);
 
@@ -540,10 +516,8 @@ class _$SetSelectedCharacterCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$SetSelectedCharacter$CopyWith<$Res>
-    implements $SetSelectedCharacterCopyWith<$Res> {
-  factory _$$SetSelectedCharacter$CopyWith(_$SetSelectedCharacter$ value,
-          $Res Function(_$SetSelectedCharacter$) then) =
+abstract class _$$SetSelectedCharacter$CopyWith<$Res> implements $SetSelectedCharacterCopyWith<$Res> {
+  factory _$$SetSelectedCharacter$CopyWith(_$SetSelectedCharacter$ value, $Res Function(_$SetSelectedCharacter$) then) =
       __$$SetSelectedCharacter$CopyWithImpl<$Res>;
   @override
   @useResult
@@ -557,8 +531,7 @@ abstract class _$$SetSelectedCharacter$CopyWith<$Res>
 class __$$SetSelectedCharacter$CopyWithImpl<$Res>
     extends _$SetSelectedCharacterCopyWithImpl<$Res, _$SetSelectedCharacter$>
     implements _$$SetSelectedCharacter$CopyWith<$Res> {
-  __$$SetSelectedCharacter$CopyWithImpl(_$SetSelectedCharacter$ _value,
-      $Res Function(_$SetSelectedCharacter$) _then)
+  __$$SetSelectedCharacter$CopyWithImpl(_$SetSelectedCharacter$ _value, $Res Function(_$SetSelectedCharacter$) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -593,8 +566,7 @@ class _$SetSelectedCharacter$ implements SetSelectedCharacter$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SetSelectedCharacter$ &&
-            (identical(other.character, character) ||
-                other.character == character));
+            (identical(other.character, character) || other.character == character));
   }
 
   @override
@@ -604,20 +576,17 @@ class _$SetSelectedCharacter$ implements SetSelectedCharacter$ {
   @override
   @pragma('vm:prefer-inline')
   _$$SetSelectedCharacter$CopyWith<_$SetSelectedCharacter$> get copyWith =>
-      __$$SetSelectedCharacter$CopyWithImpl<_$SetSelectedCharacter$>(
-          this, _$identity);
+      __$$SetSelectedCharacter$CopyWithImpl<_$SetSelectedCharacter$>(this, _$identity);
 }
 
 abstract class SetSelectedCharacter$ implements SetSelectedCharacter {
-  const factory SetSelectedCharacter$(final Character character) =
-      _$SetSelectedCharacter$;
+  const factory SetSelectedCharacter$(final Character character) = _$SetSelectedCharacter$;
 
   @override
   Character get character;
   @override
   @JsonKey(ignore: true)
-  _$$SetSelectedCharacter$CopyWith<_$SetSelectedCharacter$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SetSelectedCharacter$CopyWith<_$SetSelectedCharacter$> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -670,14 +639,12 @@ mixin _$UpdateLike {
 
 /// @nodoc
 abstract class $UpdateLikeCopyWith<$Res> {
-  factory $UpdateLikeCopyWith(
-          UpdateLike value, $Res Function(UpdateLike) then) =
+  factory $UpdateLikeCopyWith(UpdateLike value, $Res Function(UpdateLike) then) =
       _$UpdateLikeCopyWithImpl<$Res, UpdateLike>;
 }
 
 /// @nodoc
-class _$UpdateLikeCopyWithImpl<$Res, $Val extends UpdateLike>
-    implements $UpdateLikeCopyWith<$Res> {
+class _$UpdateLikeCopyWithImpl<$Res, $Val extends UpdateLike> implements $UpdateLikeCopyWith<$Res> {
   _$UpdateLikeCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -688,19 +655,16 @@ class _$UpdateLikeCopyWithImpl<$Res, $Val extends UpdateLike>
 
 /// @nodoc
 abstract class _$$UpdateLikeStartCopyWith<$Res> {
-  factory _$$UpdateLikeStartCopyWith(
-          _$UpdateLikeStart value, $Res Function(_$UpdateLikeStart) then) =
+  factory _$$UpdateLikeStartCopyWith(_$UpdateLikeStart value, $Res Function(_$UpdateLikeStart) then) =
       __$$UpdateLikeStartCopyWithImpl<$Res>;
   @useResult
   $Res call({int id, bool like});
 }
 
 /// @nodoc
-class __$$UpdateLikeStartCopyWithImpl<$Res>
-    extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeStart>
+class __$$UpdateLikeStartCopyWithImpl<$Res> extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeStart>
     implements _$$UpdateLikeStartCopyWith<$Res> {
-  __$$UpdateLikeStartCopyWithImpl(
-      _$UpdateLikeStart _value, $Res Function(_$UpdateLikeStart) _then)
+  __$$UpdateLikeStartCopyWithImpl(_$UpdateLikeStart _value, $Res Function(_$UpdateLikeStart) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -825,31 +789,26 @@ class _$UpdateLikeStart implements UpdateLikeStart {
 }
 
 abstract class UpdateLikeStart implements UpdateLike {
-  const factory UpdateLikeStart(final int id, {required final bool like}) =
-      _$UpdateLikeStart;
+  const factory UpdateLikeStart(final int id, {required final bool like}) = _$UpdateLikeStart;
 
   int get id;
   bool get like;
   @JsonKey(ignore: true)
-  _$$UpdateLikeStartCopyWith<_$UpdateLikeStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UpdateLikeStartCopyWith<_$UpdateLikeStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$UpdateLikeSuccessfulCopyWith<$Res> {
-  factory _$$UpdateLikeSuccessfulCopyWith(_$UpdateLikeSuccessful value,
-          $Res Function(_$UpdateLikeSuccessful) then) =
+  factory _$$UpdateLikeSuccessfulCopyWith(_$UpdateLikeSuccessful value, $Res Function(_$UpdateLikeSuccessful) then) =
       __$$UpdateLikeSuccessfulCopyWithImpl<$Res>;
   @useResult
   $Res call({int id, bool like});
 }
 
 /// @nodoc
-class __$$UpdateLikeSuccessfulCopyWithImpl<$Res>
-    extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeSuccessful>
+class __$$UpdateLikeSuccessfulCopyWithImpl<$Res> extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeSuccessful>
     implements _$$UpdateLikeSuccessfulCopyWith<$Res> {
-  __$$UpdateLikeSuccessfulCopyWithImpl(_$UpdateLikeSuccessful _value,
-      $Res Function(_$UpdateLikeSuccessful) _then)
+  __$$UpdateLikeSuccessfulCopyWithImpl(_$UpdateLikeSuccessful _value, $Res Function(_$UpdateLikeSuccessful) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -902,8 +861,7 @@ class _$UpdateLikeSuccessful implements UpdateLikeSuccessful {
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateLikeSuccessfulCopyWith<_$UpdateLikeSuccessful> get copyWith =>
-      __$$UpdateLikeSuccessfulCopyWithImpl<_$UpdateLikeSuccessful>(
-          this, _$identity);
+      __$$UpdateLikeSuccessfulCopyWithImpl<_$UpdateLikeSuccessful>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -975,31 +933,26 @@ class _$UpdateLikeSuccessful implements UpdateLikeSuccessful {
 }
 
 abstract class UpdateLikeSuccessful implements UpdateLike {
-  const factory UpdateLikeSuccessful(final int id, {required final bool like}) =
-      _$UpdateLikeSuccessful;
+  const factory UpdateLikeSuccessful(final int id, {required final bool like}) = _$UpdateLikeSuccessful;
 
   int get id;
   bool get like;
   @JsonKey(ignore: true)
-  _$$UpdateLikeSuccessfulCopyWith<_$UpdateLikeSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UpdateLikeSuccessfulCopyWith<_$UpdateLikeSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$UpdateLikeErrorCopyWith<$Res> {
-  factory _$$UpdateLikeErrorCopyWith(
-          _$UpdateLikeError value, $Res Function(_$UpdateLikeError) then) =
+  factory _$$UpdateLikeErrorCopyWith(_$UpdateLikeError value, $Res Function(_$UpdateLikeError) then) =
       __$$UpdateLikeErrorCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$UpdateLikeErrorCopyWithImpl<$Res>
-    extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeError>
+class __$$UpdateLikeErrorCopyWithImpl<$Res> extends _$UpdateLikeCopyWithImpl<$Res, _$UpdateLikeError>
     implements _$$UpdateLikeErrorCopyWith<$Res> {
-  __$$UpdateLikeErrorCopyWithImpl(
-      _$UpdateLikeError _value, $Res Function(_$UpdateLikeError) _then)
+  __$$UpdateLikeErrorCopyWithImpl(_$UpdateLikeError _value, $Res Function(_$UpdateLikeError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1039,13 +992,11 @@ class _$UpdateLikeError implements UpdateLikeError {
         (other.runtimeType == runtimeType &&
             other is _$UpdateLikeError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
@@ -1123,12 +1074,10 @@ class _$UpdateLikeError implements UpdateLikeError {
 }
 
 abstract class UpdateLikeError implements UpdateLike {
-  const factory UpdateLikeError(
-      final Object error, final StackTrace stackTrace) = _$UpdateLikeError;
+  const factory UpdateLikeError(final Object error, final StackTrace stackTrace) = _$UpdateLikeError;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$UpdateLikeErrorCopyWith<_$UpdateLikeError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UpdateLikeErrorCopyWith<_$UpdateLikeError> get copyWith => throw _privateConstructorUsedError;
 }
