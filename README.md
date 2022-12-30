@@ -1,16 +1,12 @@
-# final_project
 
 Rick and Morty characters app
 
-## Getting Started
+As my final project for the course i did an app inspired by the TV show Rick & Morty, the app shows the user an infinite scrollable list of characters from the show, and to get more information the user needs to tap on the character. Also the user can like their favourite characters, and pull to refresh the page.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<a href="url"><img src="https://user-images.githubusercontent.com/67394249/210091527-7e246902-d8a9-4d71-ac2c-174a424d70ec.png" align="left" height=35% width=35% ></a>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<a href="url"><img src="https://user-images.githubusercontent.com/67394249/210091530-3e34e3f9-61ba-4525-9966-2e7995186fb3.png" align="left" height=35% width=35% ></a>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<a href="url"><img src="https://user-images.githubusercontent.com/67394249/210091531-43183fd7-f427-4d21-a40b-326c6e8c53a4.png" align="left" height=35% width=35% ></a>
+
